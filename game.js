@@ -14,7 +14,7 @@ const sp_Pokemon = [
 const newPokemon = "몬몬"; //추가할 포켓몬 정의
 const length = sp_Pokemon.length; //이거 길이 값 21
 
-for (let i = 0; i <= length; i++) {
+for (let i = 0; i <= length; i++) { //이게 되네?
     if (i === length) {
         // 현재 인덱스가 배열의 길이와 같으면
         sp_Pokemon[length] = newPokemon; // 새로운 포켓몬을 배열의 마지막에 추가
