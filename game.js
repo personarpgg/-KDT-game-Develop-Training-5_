@@ -25,21 +25,22 @@ console.log(length)
 //문제 2
 //'_pokemon' 배열의 마지막 포켓몬을 방출해주세요. 이를 위해 배열의 마지막 원소를 제거하고, 그 원소의 이름을 출력하세요.
 
-if (_pokemon.length === 0) {
+// 배열이 비어있는 경우에 대한 예외 처리
+if (sp_Pokemon.length === 0) {
     console.log("배열이 비어있습니다.");
 } else {
     // 배열의 마지막 포켓몬을 찾아내기 위해 반복문 사용
     let lastPokemon;
-    for (let i = 0; i < _pokemon.length; i++) {
-        if (i === _pokemon.length - 1) {
-            lastPokemon = _pokemon[i];
+    for (let i = 0; i < sp_Pokemon.length; i++) {
+        if (i === sp_Pokemon.length - 1) {
+            lastPokemon = sp_Pokemon[i];
         }
     }
     
     // 마지막 포켓몬 출력
     console.log("마지막 포켓몬: " + lastPokemon);
 }
-// 결과 출력
+
 
 
 
