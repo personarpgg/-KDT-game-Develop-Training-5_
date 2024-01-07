@@ -20,7 +20,7 @@ for (let i = 0; i <= length; i++) { //이게 되네?
         sp_Pokemon[length] = newPokemon; // 새로운 포켓몬을 배열의 마지막에 추가
     }
 }
-console.log(length)
+console.log("1번 문제 마지막 포켓몬 : "+length)
 //작업 시작 240107
 //문제 2
 //'_pokemon' 배열의 마지막 포켓몬을 방출해주세요. 이를 위해 배열의 마지막 원소를 제거하고, 그 원소의 이름을 출력하세요.
@@ -38,10 +38,8 @@ if (sp_Pokemon.length === 0) {
     }
     
     // 마지막 포켓몬 출력
-    console.log("마지막 포켓몬: " + lastPokemon);
+    console.log("2번 문제 마지막 포켓몬 : " + lastPokemon);
 }
-
-
 
 
 // //답
