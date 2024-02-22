@@ -20,7 +20,7 @@ for (let i = 0; i <= length; i++) { //이게 되네?
         sp_Pokemon[length] = newPokemon; // 새로운 포켓몬을 배열의 마지막에 추가
     }
 }
-console.log("1번 문제 마지막 포켓몬 : "+length)
+console.log("1번 문제 마지막 포켓몬 : " + length)
 //작업 시작 240107
 //문제 2
 //'_pokemon' 배열의 마지막 포켓몬을 방출해주세요. 이를 위해 배열의 마지막 원소를 제거하고, 그 원소의 이름을 출력하세요.
@@ -36,10 +36,19 @@ if (sp_Pokemon.length === 0) {
             lastPokemon = sp_Pokemon[i];
         }
     }
-    
+
     // 마지막 포켓몬 출력
     console.log("2번 문제 마지막 포켓몬 : " + lastPokemon);
 }
+
+for (let i = 0; i < sp_Pokemon.length; i++) {
+    if (sp_Pokemon === sp_Pokemon.length - 1) {
+        console.log("마지막 포켓몬은 " + sp_Pokemon[i]);
+        return;
+
+    }
+}
+
 
 
 // //답
@@ -47,7 +56,13 @@ if (sp_Pokemon.length === 0) {
 // console.log(removedPokemon);
 
 // //문제 3
-// //'_pokemon' 배열에서 찾고자 하는 포켓몬의 인덱스를 찾아주세요. 포켓몬이 배열에 없다면 -1을 출력하세요.
+//'_pokemon' 배열에서 찾고자 하는 포켓몬의 인덱스를 찾아주세요. 포켓몬이 배열에 없다면 -1을 출력하세요.
+
+for(let i = 0; i < sp_Pokemon.length; i++){
+    if(sp_Pokemon[i] === "디안시"){
+        console.log("3번 문제 찾는 포켓몬은" + i + 1 + "번 째에 존재함");
+    }
+}
 
 // //답
 // const searchPokemonIndex = _pokemon.indexOf("찾고자하는포켓몬");
